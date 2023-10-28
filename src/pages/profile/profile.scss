@@ -1,0 +1,113 @@
+@import "../../style.scss";
+
+.profile{
+    @include themify($themes){
+
+        background-color: themed("bgSoft");
+
+        .images{
+            width: 100%;
+            height: 300px;
+            position: relative;
+
+            .cover{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .profilePic{
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                object-fit: cover;
+                position: absolute;
+                left: 0;
+                right: 0;
+                margin: auto; //get center
+                top: 200px;
+            }
+        }
+
+    .profileContainer{
+        padding: 20px 70px; //give a space
+
+       .uInfo{
+            height: 120px;
+            //Box shadow
+            -webkit-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.09);
+            -moz-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.09);
+            box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.09);
+            border-radius: 20px;
+            background-color: themed("bg");
+            color: themed("textColor");
+            padding: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between; //give space 3 slides
+            margin: 30px;
+
+            .left{
+                flex: 0;
+                display: flex;
+                gap: 5px;
+                padding: 5px;
+                justify-content: flex-start;
+                align-items: center;
+
+                a{
+                    color: themed("textColorSoft");
+                }
+            }
+            .center{
+                flex: 1.5;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+
+                span{
+                    font-size: 25px;
+                    font-weight: 500;
+                }
+
+                .info{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                
+                .item{
+                   display: flex;
+                   align-items: center;
+                   gap: 5px; 
+                   color: themed("textColorSoft");
+                }
+
+                    span{
+                        font-size: 12px;
+                    }
+
+                }
+            
+
+                button{
+                    border: none;
+                    background-color: #5271ff;
+                    color: white;
+                    padding: 10px 20px;
+                    border-radius: 50px;
+                    cursor: pointer;
+                }
+            }
+            .right{
+                flex: 1;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end; //box end to come
+                gap: 10px;
+            }
+        }
+     }
+
+    }
+}

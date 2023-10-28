@@ -1,0 +1,94 @@
+.login{
+
+    height: 100vh;
+    background-color: rgb(193, 190, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .card{
+        display: flex;
+        width: 50%;
+        background-color: white;
+        border-radius: 10px;
+        min-height: 400px; // get picture to small size
+        overflow: hidden; //circle
+        
+
+        .left{
+            flex: 1;
+            background: linear-gradient(rgba(39,11,96,0.5),rgba(39,11,96,0.5)), url("https://images.squarespace-cdn.com/content/v1/58f0b46b893fc0b6e53ef021/1502271651824-UWMBJ9W8M7K2A3CLP02D/image-asset.jpeg") center;
+            background-size: cover;
+            padding: 50px;
+            display: flex; // horizental
+            flex-direction: column; //vertical
+            gap: 20px; //space between
+            color: white; //font color
+
+            h1{
+                font-size: 70px;
+                line-height: 70px;
+                color: aliceblue;
+            }
+            span{
+                font-size: 16px;
+                color: rgb(153, 142, 142);
+                font-weight: bold;
+            }
+            button{
+                width: 50%;
+                padding: 10px; 
+                border: none;
+                background-color: white;
+                color: rebeccapurple;
+                cursor: pointer;
+                font-weight: bold;
+                border-radius: 10px;
+
+            }
+            button:hover{
+               background-color: rgb(0, 255, 64);
+            }
+        }
+        .right{
+            flex: 1;
+            padding: 50px; //equal to left & right
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            justify-content: center;
+
+            h1{
+                color: #555;
+                font-size: 35px;
+            }
+
+            form{
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+
+                input{
+                    border: none;
+                    border-bottom: 1px solid lightgrey;
+                    padding: 20px 10px;
+                }
+                button{
+                    width: 50%;
+                    padding: 10px;
+                    border: none;
+                    background-color: #938eef;
+                    color: white;
+                    font-weight: bold;
+                    cursor: pointer;
+                    border-radius: 10px;
+                }
+                button:hover{
+                    color: rgb(0, 187, 255);
+                    
+                 }
+            }
+            
+        }
+    }
+}

@@ -1,0 +1,112 @@
+@import "../../style.scss";  //darkmode function
+
+.rightBar{
+    @include themify($themes){
+    flex:3.5; //length of rightside part
+    position: sticky;
+    top: 70px; // navbar full size 70 so
+    height: calc(100vh - 70px);
+    overflow: scroll; //scrollbar display 
+
+    background-color: themed("bgSoft"); //dark mood new
+
+    @include mobile{
+        display: none;
+    }
+
+    &::-webkit-scrollbar{
+        display: none;
+    } //take scrollbar not display
+
+    .container{
+        padding: 20px;
+
+        .item{
+
+            //Box shadow
+            -webkit-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.09);
+            -moz-box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.09);
+            box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.09);
+            padding: 10px;
+            margin-bottom: 10px;
+
+            background-color: themed("bg"); //dark mood new
+
+            span{
+                color: gray;
+            }
+
+            .user{
+                display: flex;
+                align-items: center;
+                justify-content: space-between; //separate them
+                margin: 10px 0px; //space 2 profile
+
+                .userInfo{
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                    position: relative; //parent position
+
+                    img{
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        object-fit: cover;
+
+                    }
+
+                    .online{
+                        width: 11px;
+                        height: 11px;
+                        border-radius: 50%;
+                        background-color: rgb(15, 240, 15);
+                        position: absolute; //set dots on pic if use this position absolute parent should be position relative
+                        top: 0;
+                        left: 30px;
+                    }
+
+                    p{
+                       //color: gray; (light mood)
+                       color: themed("textColorSoft");  //dark mood new
+                       font-size: 16px;
+                    }
+
+                    span{
+                        font-weight: 500;
+                        //color: black; (light mood)
+                        color: themed("textColor");  //dark mood new
+                    }
+
+                }
+
+                .buttons{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    button{
+                        border: none;
+                        padding: 5px;
+                        color: white;
+                        cursor: pointer;
+
+                        &:first-child{ //follow button
+                            background-color: blue;
+                        }
+
+                        &:last-child{ //follow button
+                            background-color: red;
+                        }
+
+                    }
+                    button:hover{
+                        color:aqua;
+                    }
+
+                }
+            }
+        }
+    }
+}
+}
