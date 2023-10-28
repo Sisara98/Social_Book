@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Social_Book/static/css/main.1abb510e.css",
+    "main.js": "/Social_Book/static/js/main.09724220.js",
+    "static/media/friends1.png": "/Social_Book/static/media/friends1.d565f32eca063d86ff31.png",
+    "static/media/memories5.png": "/Social_Book/static/media/memories5.ca01b65a3286d18c0a0a.png",
+    "static/media/gaming7.png": "/Social_Book/static/media/gaming7.1d1ba87a45fa26f44e1d.png",
+    "static/media/marketplace3.png": "/Social_Book/static/media/marketplace3.d7d31500492717949961.png",
+    "static/media/group-discussion2.png": "/Social_Book/static/media/group-discussion2.74b1ff6eeff6d42f7e24.png",
+    "static/media/video9.png": "/Social_Book/static/media/video9.825fa04ed0470feedc47.png",
+    "static/media/Books12.png": "/Social_Book/static/media/Books12.b14b8ad1a714d6bf4945.png",
+    "static/media/events6.png": "/Social_Book/static/media/events6.5aace42d3fb8084c1c18.png",
+    "static/media/gallery8.png": "/Social_Book/static/media/gallery8.7cab3f2453d183dff56f.png",
+    "static/media/Fundraiser11.png": "/Social_Book/static/media/Fundraiser11.453ec071f13ee5755b06.png",
+    "static/media/messages10.png": "/Social_Book/static/media/messages10.88080b6820fe77479bbc.png",
+    "static/media/courses13.png": "/Social_Book/static/media/courses13.9f08f315c327ecc01b09.png",
+    "index.html": "/Social_Book/index.html",
+    "main.1abb510e.css.map": "/Social_Book/static/css/main.1abb510e.css.map",
+    "main.09724220.js.map": "/Social_Book/static/js/main.09724220.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1abb510e.css",
+    "static/js/main.09724220.js"
+  ]
+}
